@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" type="text/css" href="Style/style.css" />
+    <script type="text/javascript" src="Script/script.js"></script>
+</head>
+<body>
+    <div class="headingbox"></div>
+    <div class="heading">
+        <div class="heading-box">CGPA Calculator</div>
+    </div>
+    <div class="innerbody" id="inbody" style="text-align: center;">
+        <form autocomplete="off">
+            <label><b>Number of courses:</b></label>
+            <input type="text" class="field" style="width: 80px;" id="submitid" />
+            <button onclick="submitcourses(); return false;">Submit</button>
+        </form>
+        <div id="fieldhtml"></div>
+        <div id="result"></div>
+    </div>
+    <div class="innerbody">
+        <h2>How to use the calculator</h2>
+        <ul>
+            <li> Enter the number of courses you have completed so far.</li>
+            <li>Click <b>Submit</b>.</li>
+            <li>For each course, enter the number of credits* and the corresponding grade earned.</li>
+            <li>Click <b>Calculate</b> and your CGPA will be displayed below the button.</li>
+        </ul>
+        * 3 credits for normal courses and 4 credits for courses with lab classes. <br /><br />
+        <div style="text-align: justify;"><b>Note</b> that this calculator conforms to the <b>grade points</b> as assigned for Independent University, Bangladesh. If your university has a different set of grade points, send me an email (armunalam@gmail.com), I'll update it.</div>
+        
+        <br />
+        <h2 style="margin-bottom: 5px;">Example</h2>
+        <div style="text-align: justify;">The following example includes four courses. Each line represents a course. The credits are in the left column and the corresponding grades are in the right column.</div>
+        <img src="Image/example.png" width="550px" style="margin-left: auto; margin-right: auto; display: block;" alt="An example image" />
+        
+        <h2 style="margin-bottom: 10px;">Grade points</h2>
+        <table>
+            <tr>
+                <td><b>Grade</b></td>
+                <td><b>Grade Point</b></td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>A-</td>
+                <td>3.7</td>
+            </tr>
+            <tr>
+                <td>B+</td>
+                <td>3.3</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>B-</td>
+                <td>2.7</td>
+            </tr>
+            <tr>
+                <td>C+</td>
+                <td>2.3</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>C-</td>
+                <td>1.7</td>
+            </tr>
+            <tr>
+                <td>D+</td>
+                <td>1.3</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>O</td>
+                <td>0</td>
+            </tr>
+        </table>
+        <b>Note</b> that <b>O</b> stands for <b>others</b>. It consists of the grades <b>W</b>, <b>I</b>, <b>Z</b>, <b>Y</b> etc.
+    </div>
+    <div class="innerbody" style="text-align: center;">Created by <b>Armun Alam</b></div>
+    <div style="height: 25px"></div>
+</body>
+</html>
