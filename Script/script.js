@@ -5,12 +5,12 @@ function submitcourses()
     
     if (n == '')
     {
-        document.getElementById("fieldhtml").innerHTML = "<div class='error'>Please enter the number of credits to proceed</div>";
+        document.getElementById("fieldhtml").innerHTML = "<div class='error'>Please enter the number of courses to proceed</div>";
         return false;
     }
     else if (n <= 0)
     {
-        document.getElementById("fieldhtml").innerHTML = "<div class='error'>Number of credits must be greater than 0</div>";
+        document.getElementById("fieldhtml").innerHTML = "<div class='error'>Number of courses must be greater than 0</div>";
         return false;
     }
     
