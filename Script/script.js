@@ -43,7 +43,6 @@ function cgpaCalculate()
             return false;
         }
         
-        
         credit = parseFloat(document.getElementById("credit" + i).value);
         if (!Number.isInteger(credit) || credit < 0)
         {

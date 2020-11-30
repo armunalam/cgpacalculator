@@ -29,7 +29,7 @@ body {
     margin: 0px;
     padding: 5px;
     font-size: 35px;
-    padding-left: 35px;/*390px;*/
+    padding-left: 35px;
     text-align: left;
     font-family: HeadingFontRegular, TextFontRegular, sans-serif;
     position: fixed;
@@ -40,11 +40,10 @@ body {
 }
 
 .heading {
-    /*background-color: #141414;*/
     margin: 0px;
     padding: 5px;
     font-size: 35px;
-    padding-left: 35px;/*390px;*/
+    padding-left: 35px;
     text-align: left;
     font-family: HeadingFontRegular, TextFontRegular, sans-serif;
     position: fixed;
