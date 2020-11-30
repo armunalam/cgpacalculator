@@ -1,4 +1,4 @@
-function submitcourses()
+function submitCourses()
 {
     document.getElementById("result").innerHTML = "";
     var n = document.getElementById("submitid").value;
