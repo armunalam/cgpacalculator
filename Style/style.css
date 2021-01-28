@@ -25,7 +25,8 @@ body {
 }
 
 .headingbox {
-    background-color: #141414;
+    /* background-color: #141414; */
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 0px;
     padding: 5px;
     font-size: 35px;
@@ -36,7 +37,9 @@ body {
     width: 100%;
     top: 0;
     height: 40px;
-    opacity: 0.9;
+    /* opacity: 0.9; */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .heading {
