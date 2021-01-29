@@ -160,3 +160,24 @@ a:visited { color: white; text-decoration: none; }
 a:hover   { color: white; text-decoration: underline; }
 a:focus   { color: white; text-decoration: underline; }
 a:active  { color: white; text-decoration: underline; }
+
+
+/* Scrollbar (not supported in Firefox) */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #161616;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #616161;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4a4f52;
+}
