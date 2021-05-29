@@ -3,24 +3,31 @@ window.localStorage.setItem('numOfCoursesGlobal', 0)
 function submitCourses() {
     document.querySelector('#result').innerHTML = '';
     let n = document.querySelector('#submitid').value;
+    let fieldHtml = document.querySelector('#fieldhtml');
     window.localStorage.setItem('numOfCoursesGlobal', n);
 
     if (n == '') {
-        document.querySelector('#fieldhtml').innerHTML = '<div class="error">Please enter the number of courses to proceed</div>';
+        fieldHtml.innerHTML = '<div class="error">Please enter the number of courses to proceed</div>';
         return false;
     } else if (n <= 0) {
-        document.querySelector('#fieldhtml').innerHTML = '<div class="error">Number of courses must be greater than 0</div>';
+        fieldHtml.innerHTML = '<div class="error">Number of courses must be greater than 0</div>';
+        return false;
+    } else if (!parseInt(n)) {
+        fieldHtml.innerHTML = '<div class="error">Invalid character(s)</div>';
         return false;
     }
+    
+    n = parseInt(n);
 
     let html = '<div style="margin-top: 10px;"></div><form onsubmit="cgpaCalculate(); return false;" autocomplete="off">';
 
-    for (let i = 0; i < n; i++)
+    for (let i = 0; i < n; i++) {
         html += `
             <input type="text" class="field infofield" id="credit${i}" placeholder="Number of credits" />
             <input type="text" class="field infofield" id="grade${i}" placeholder="Grade earned" />
             <br id="br${i}" />
         `;
+    }
         
     html += `
         <button class="button-padding-1" type="button" title="Delete the last row" onclick="deleteRow(); return false;" style="margin-top: 15px;">

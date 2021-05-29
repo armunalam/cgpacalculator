@@ -125,6 +125,7 @@ button {
     vertical-align: middle;
     font-size: 18px;
     color: white;
+    cursor: pointer;
 }
 
 button:hover {
