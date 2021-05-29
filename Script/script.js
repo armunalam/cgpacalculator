@@ -29,7 +29,7 @@ function submitCourses() {
         <button class="button-padding-1" type="button" title="Add one row above" onclick="addRow(); return false;" style="margin-top: 15px;">
             +
         </button>
-        <button class="button-padding-2" type="submit" onclick="cgpaCalculate(); return false;" style="margin-top: 15px;">
+        <button class="button-padding-2" type="submit" style="margin-top: 15px;">
             Calculate
         </button></form>
     `;
@@ -123,14 +123,14 @@ function gradePoint(g) {
     if (g == 'A' || g == 'a') return 4;
     else if (g == 'A-' || g == 'a-') return 3.7;
     else if (g == 'B+' || g == 'b+') return 3.3;
-    else if (g == 'B' || g == 'b') return 3;
+    else if (g == 'B'  || g == 'b') return 3;
     else if (g == 'B-' || g == 'b-') return 2.7;
     else if (g == 'C+' || g == 'c+') return 2.3;
-    else if (g == 'C' || g == 'c') return 2;
+    else if (g == 'C'  || g == 'c') return 2;
     else if (g == 'C-' || g == 'c-') return 1.7;
     else if (g == 'D+' || g == 'd+') return 1.3;
-    else if (g == 'D' || g == 'd') return 1;
-    else if (g == 'F' || g == 'f') return 0;
-    else if (g == 'O' || g == 'o') return 0;
+    else if (g == 'D'  || g == 'd') return 1;
+    else if (g == 'F'  || g == 'f') return 0;
+    else if (g == 'O'  || g == 'o') return 0;
     else return -1;
 }
