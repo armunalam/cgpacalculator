@@ -23,13 +23,13 @@ function submitCourses() {
         `;
         
     html += `
-        <button type="button" title="Delete the last row" onclick="deleteRow(); return false;" style="margin-top: 15px;">
+        <button class="button-padding-1" type="button" title="Delete the last row" onclick="deleteRow(); return false;" style="margin-top: 15px;">
             –
         </button>
-        <button type="button" title="Add one row above" onclick="addRow(); return false;" style="margin-top: 15px;">
+        <button class="button-padding-1" type="button" title="Add one row above" onclick="addRow(); return false;" style="margin-top: 15px;">
             +
         </button>
-        <button type="submit" onclick="cgpaCalculate(); return false;" style="margin-top: 15px;">
+        <button class="button-padding-2" type="submit" onclick="cgpaCalculate(); return false;" style="margin-top: 15px;">
             Calculate
         </button></form>
     `;
