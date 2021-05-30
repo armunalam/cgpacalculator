@@ -33,7 +33,7 @@ function submitCourses() {
         <button class="button-padding-1" type="button" title="Delete the last row" onclick="deleteRow(); return false;" style="margin-top: 15px;">
             –
         </button>
-        <button class="button-padding-1" type="button" title="Add one row above" onclick="addRow(); return false;" style="margin-top: 15px;">
+        <button class="button-padding-1" type="button" title="Add one row below the last row" onclick="addRow(); return false;" style="margin-top: 15px;">
             +
         </button>
         <button class="button-padding-2" type="submit" style="margin-top: 15px;">
