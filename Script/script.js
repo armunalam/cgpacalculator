@@ -41,7 +41,7 @@ function submitCourses() {
         </button></form>
     `;
 
-    document.querySelector('#fieldhtml').innerHTML = html;
+    fieldHtml.innerHTML = html;
 }
 
 function addRow() {
